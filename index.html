@@ -243,7 +243,7 @@
 
   .toc-item {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     padding: 10px 4px;
     border-bottom: 1px dashed var(--pink-200);
     text-decoration: none;
@@ -252,6 +252,35 @@
   }
 
   .toc-item:active { background: var(--pink-50); }
+
+  .toc-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  .toc-dot.d1 { background: linear-gradient(135deg, #ffffff, #e8ebf5); border: 1px solid #cdd1de; box-shadow: 0 0 4px rgba(200,200,220,0.5); }
+  .toc-dot.d2 { background: var(--pink-400); box-shadow: 0 0 6px rgba(255, 138, 184, 0.5); }
+  .toc-dot.d3 { background: var(--purple-400); box-shadow: 0 0 6px rgba(192, 132, 252, 0.45); }
+  .toc-dot.none { background: var(--pink-100); opacity: 0.6; }
+
+  .toc-concert-tag {
+    display: inline-block;
+    padding: 1px 7px;
+    border-radius: 999px;
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-right: 6px;
+    vertical-align: 1px;
+  }
+  .toc-concert-tag.d1 { background: #f0f0f5; color: #5a5a70; border: 1px solid #d8dae4; }
+  .toc-concert-tag.d2 { background: var(--pink-100); color: var(--pink-600); }
+  .toc-concert-tag.d3 { background: var(--purple-100); color: var(--purple-600); }
 
   .toc-num {
     font-family: 'Playfair Display', serif;
@@ -901,9 +930,9 @@
       </div>
       <div class="cover-bottom">
         <div class="cover-features">
-          <span>♡ 5 大弘大必訪咖啡店</span>
+          <span>♡ 4 人同框・Pink Lemonade 全員合流 ♡</span>
           <span>♡ INTER-ZECTION D1 / D2 / D3 三場攻略</span>
-          <span>♡ 安國一日散策 ・ 廣藏市場必買</span>
+          <span>♡ 粉紅義大利麵 × 漢江夜泡麵 × 廣藏市場</span>
         </div>
         <div class="cover-meta-row">
           <span>04.24 — 04.27</span>
@@ -920,34 +949,38 @@
     <div class="toc-title">目錄 · Table of Contents</div>
     <div class="toc-list">
       <a class="toc-item" href="#day1">
+        <span class="toc-dot d1"></span>
         <span class="toc-num">01</span>
         <div class="toc-main">
-          <div class="toc-main-title">抵達首爾 · 弘大漫遊</div>
-          <div class="toc-main-sub">Arrival in Seoul</div>
+          <div class="toc-main-title"><span class="toc-concert-tag d1">🎤 D1</span>抵達首爾 · K口 / 鬼鬼 首場</div>
+          <div class="toc-main-sub">Cloud Dancer · 4/24 Fri</div>
         </div>
         <span class="toc-page">P. 04</span>
       </a>
       <a class="toc-item" href="#day2">
+        <span class="toc-dot d2"></span>
         <span class="toc-num">02</span>
         <div class="toc-main">
-          <div class="toc-main-title">INTER-ZECTION D2</div>
-          <div class="toc-main-sub">4 人一起 · The Show ♡</div>
+          <div class="toc-main-title"><span class="toc-concert-tag d2">🎤 D2</span>睡飽再出發 · 4 人同框 ♡</div>
+          <div class="toc-main-sub">Pink Lemonade · 4/25 Sat</div>
         </div>
         <span class="toc-page">P. 12</span>
       </a>
       <a class="toc-item" href="#day3">
+        <span class="toc-dot d3"></span>
         <span class="toc-num">03</span>
         <div class="toc-main">
-          <div class="toc-main-title">安國古味 · D3 最終場</div>
-          <div class="toc-main-sub">Anguk & Final Night</div>
+          <div class="toc-main-title"><span class="toc-concert-tag d3">🎤 D3</span>安國散策 · 最終場之夜</div>
+          <div class="toc-main-sub">Quiet Violet · 4/26 Sun</div>
         </div>
         <span class="toc-page">P. 20</span>
       </a>
       <a class="toc-item" href="#day4">
+        <span class="toc-dot none"></span>
         <span class="toc-num">04</span>
         <div class="toc-main">
           <div class="toc-main-title">廣藏市場 · 回家</div>
-          <div class="toc-main-sub">See You Again</div>
+          <div class="toc-main-sub">See You Again ♡ · 4/27 Mon</div>
         </div>
         <span class="toc-page">P. 28</span>
       </a>
